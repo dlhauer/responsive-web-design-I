@@ -295,7 +295,6 @@ footer {
 		justify-content: flex-start;
 		margin-bottom: 0;
 		padding: 0;
-		/* border: 1px solid red; */
 		width: 100%;
 	}
 
@@ -303,11 +302,9 @@ footer {
 		margin: 0;
 		padding: 0;
 		padding-top: 15px;
-		/* border: 1px solid red; */
 	}
 	.links {
 		flex-direction: column;
-		/* border: 1px solid red; */
 		width: 100%;
 		margin: 0;
 	}
