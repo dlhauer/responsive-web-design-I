@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	padding: 50px 100px;
+	padding: 50px 70px;
 }
 
 nav {
@@ -72,6 +72,14 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 30px;
+	width: 100%;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
 }
 
 nav a {
@@ -85,7 +93,7 @@ nav a:hover {
 }
 
 .logo {
-	margin-left: 100px;
+	margin-left: 60px;
 }
 
 /* Styles that only apply to the Home Page. */
@@ -237,4 +245,38 @@ nav a:hover {
 footer {
 	margin-bottom: 30px;
 	text-align: center;
+}
+
+/* Yay! Media queries! */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 50px;
+    }
+
+
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    nav .links {
+        width: 100%;
+		justify-content: space-between;
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+	
+	nav .logo {
+		margin: 10px 0;
+
+	}
+    .header-right {
+        display: none;
+        /* border:  1px solid red; */
+    }
+
+    .bottom-content-item {
+        width: 30%;
+    }
 }
